@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #CAD2C5;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ header{
+    background-color: #2F3E46;
+    font-size: 100%;
+    padding: 3%;
+    margin-bottom: 15%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2em; 
+ }
+
+ .hero{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(https://via.placeholder.com/300.jpg);
+ }
+
+ .content{
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+ }
+
+ .container{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0;
+   margin: 0;
+   
+   justify-content: flex-end;
+   align-items: center;
+ }
+
+ .header-item{
+   display: inline-block;
+   margin-right: 2em;
+   padding-left: 15%;
+   background-color: #84A98C;
+   text-align: right;
+   color: #2F3E46;
+ }
+
+ .nav-item{
+   list-style: none;
+   margin-right:2em;
+ }
+
+ .nav-item a{
+   text-decoration: none;
+   color:#84A98C;
+ }
+/* creates a flex container for the items in main */
+main{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.main-item{
+
+}
+
+
+/* placeholder for the media query code to resize stuff */
+@media screen and (max-width: 768px){
+     main, nav {
+     flex-direction: column;  
+  }
+}
+  
+  /* Large smartphones - navbar changes color */
+  /* @media screen and (max-width: 768px) {
+   main, nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  Small smartphones - image placeholders change color */
+  /* @media screen and (max-width: 576px) {
+    main, nav {
+      background-color: #8ac4ff;
+    } */
+   
