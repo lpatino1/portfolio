@@ -147,7 +147,7 @@ nav a{
 
  /* media query to adjust for screen sizes */
 
-/* Tablets - header changes color */
+/* Tablets*/
 @media screen and (max-width: 992px) {
     .nav-container{
         display: flex;
@@ -160,7 +160,7 @@ nav a{
     }
   }
 
-  /* Small smartphones - image placeholders change color */
+  /* Small smartphones*/
   @media screen and (max-width: 576px) {
     .section-container {
       display: flex;
@@ -185,7 +185,6 @@ nav a{
     .work-grid{
       display: flex;
       flex-direction: column;
-      /* margin-right: 25%; */
     }
     
     .work-grid>*{
