@@ -4,97 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="working-style.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <!--Header-->
+    <!-- Header-->
     <header>
-    <!--Nav bar-->
+        <!-- Navigation bar -->
+        <h1 class ="header-text">Lesli Patino</h1>
         <nav>
-            <ul class="nav-container">
-                <li class="nav-item" >
-                    <h1 class="header-item">Lesli Patino</h1>
-                </li>
-                <div class = "nav-link">
-                <li class="nav-item">
-                    <a href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Contact Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Resume</a>
-                </li>
+           <ul class="nav-container">
+                <div class="card">
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
                 </div>
-            </ul>
+                <div class="card">
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+                </div>
+                <div class="card">
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </div>
+                <div class="card">
+                    <li>
+                        <a href="#">Resume</a>
+                    </li>
+                </div>
+           </ul>
         </nav>
     </header>
-    <!--Hero content-->
-    <section class = "hero">
-        <div class = "content">
-            <h1>
-                Filler text
-            </h1>
-    </section>
-    <!--main content-->
-    <main class ="main-container">
-        <!-- about me section -->
-        <section class="main-item">
-            <div class="header-container">
-                <h2>About Me</h2>
+    <!-- Hero image -->
+    <div class="hero"></div>
+    <!-- main content -->
+    <main>
+        <!-- About Me section -->
+        <section class="section-container">
+            <div class="section-item">
+                <h2 id="about">About Me</h2>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, quos necessitatibus animi quidem voluptatem similique nisi sed et, quasi amet magnam in autem saepe explicabo cum voluptate enim corrupti itaque?</p>
+            <div class="section-item">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil ratione maxime obcaecati adipisci porro, eum exercitationem accusantium reiciendis. Quaerat dignissimos tenetur alias eveniet vero, tempora magni odio molestias exercitationem aliquid?
+                </p>
+            </div>
         </section>
-        <!-- example works section -->
-        <section class="main-item">
-            <div class="header-container">
-                <h2>Work</h2>
+        <!-- Work section -->
+        <section class="section-container">
+            <div>
+                <h2 id="work">Work</h2>
             </div>
-            <ul>
-                <li class = "work-item">
-                    <a href="#">Project 1</a>
-                </li>
-                <li class = "work-item">
-                    <a href="#">Project 2</a>
-                </li>
-                <li class = "work-item">
-                    <a href="#">Project 3</a>
-                </li>
-                <li class = "work-item">
-                    <a href="#">Project 4</a>
-                </li>
-                <li class = "work-item">
-                    <a href="#">Project 5</a>
-                </li>
-            </ul>
+            <div>
+                <ul class = "work-grid">
+                    <li class ="project1">
+                        <a class="project-link" href="#">Project 1</a>
+                    </li>
+                    <li class ="project2">
+                        <a class="project-link" href="#">Project 2</a>
+                    </li>
+                    <li class ="project3">
+                        <a class="project-link" href="#">Project 3</a>
+                    </li>
+                    <li class ="project4">
+                        <a class="project-link" href="#">Project 4</a>
+                    </li>
+                    <li class ="project5">
+                        <a class="project-link" href="#">Project 5</a>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <!-- contact section -->
-        <section class="main-item">
-            <div class="header-container">
-                <h2>Contact Me</h2>
+        <!-- Contact section -->
+        <section class="section-container">
+            <div>
+                <h2 id="contact">Contact Me</h2>
             </div>
-            <ul>
-                <li class="contact-item">
-                    <a href="#">number</a>
-                </li>
-                <li class="contact-item">
-                    <a href="#">sampleemail@email.com</a>
-                </li>
-                <li class="contact-item">
-                    <a href="#">Github</a>
-                </li>
-                <li class="contact-item">
-                    <a href="#">Twitter</a>
-                </li>
-                <li class="contact-item">
-                    <a href="#">Spotify</a>
-                </li>
-            </ul>
+            <div>
+                <ul>
+                    <li>
+                        <a class="contact-links" href="#">999-999-9999</a>
+                    </li>
+                    <li>
+                        <a class="contact-links" href="#">studentemail@email.com</a>
+                    </li>
+                    <li>
+                        <a class="contact-links" href="#">Github</a>
+                    </li>
+                    <li>
+                        <a class="contact-links" href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="contact-links"href="#">Spotify</a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>

@@ -1,129 +1,207 @@
+:root{
+    --text: #003459;
+    --header-text:#00171F;
+    --accent: #06b6ac;
+    --secondary-bg:#00171F;
+}
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    background-color: #CAD2C5;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightcyan;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 
- header{
-    background-color: #2F3E46;
-    font-size: 100%;
-    padding: 3%;
-    margin-bottom: 15%;
-    position: fixed;
-    top: 0;
+header{
+    background-color: var(--secondary-bg);
     width: 100%;
-    height: 2em;
- }
+    height: 15%;
+    padding-bottom: 5%;
+    position: fixed;
+    top:0;
+    opacity: 95%;
+}
 
- .hero{
-    height: 300px;
+.header-text{
+    color: var(--text);
+    background-color: var(--accent);
+    display: inline-block;
+    margin-top: 1%;
+    padding-left:5%;
+}
+
+nav a{
+    color: var(--accent);
+}
+
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    margin: 0 4%;
+    justify-content: flex-end;
+
+}
+
+.card{
+    list-style: none;
+    font-size:120%;
+    padding-left: 2%;
+    margin: 1%;
+}
+
+.hero{
+    height: 400px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url(https://via.placeholder.com/300.jpg);
+    background-image: url(https://images.unsplash.com/photo-1524578271613-d550eacf6090?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-color: var(--accent);
+    background-color: center;
+    background-repeat: no-repeat;
+    background-size: cover;
  }
 
- .content{
-    width: 75%;
+ /* adjusts the h2 items */
+ main section h2{
     display: inline-block;
-    margin-left: 20px;
+    padding-right: 2%;
+    color: var(--header-text);
+    border-right: 2.5px solid var(--header-text);
+    font-size: 200%;
+    text-align: right;
+    margin: 0 3%;
  }
-/* creates a flex box container for the navigation bar */
- .nav-container{
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0;
-   margin: 0;
-   justify-content: space-between;
+ 
+ /* creates flex grid for each section in main */
+ .section-container{
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    align-items: center;
+    grid-gap: 10px;
  }
-/* applies to header item only */
- .header-item{
-   font-size: 200%;
-   display: inline-block;
-   margin-right: 2em;
-   padding-left: 15%;
-   background-color: #84A98C;
-   text-align: right;
-   color: #2F3E46;
-   width: 120%;
+ 
+ /* removes list style, customizes the boxes of each li */
+ main section ul>li{
+    list-style: none;
+    display: inline-block;
+    margin: 5%;
+    justify-content: space-between;
  }
-/* applies to all nav items */
- .nav-item{
-   list-style: none;
-   margin-right:2em;
+
+ /* customizes the links in the contact me section */
+ .contact-links{
+   color: var(--text);
+   text-decoration: 4px var(--secondary-bg) underline;
  }
-/* applies to nav-items a tags only. removes underline and sets a tag color */
- .nav-item a{
-   text-decoration: none;
-   color:#84A98C;
+
+ /* customizes the links of each project */
+ .project-link{
+    text-align: left;
+    background-color: var(--accent);
+    padding: 4.5% 2%;
+    padding-left:8%;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
  }
-/* creates a separate flex box for navigation bar links so they can be aligned to the right separate from the h2 tag*/
- .nav-link{
-   display: flex;
-   justify-content: flex-end;
+
+ /* creates flex container for work section */
+ .work-grid{
+    display: flex;
+    flex-wrap: wrap;
  }
-/* creates a flex container for the items in main */
-.main-container{
-   display: flex;
-   flex-wrap: wrap;
-}
+ 
+ /* adjusts the items in the work section */
+ .work-grid>*{
+    outline: solid 2px var(--accent);
+    flex: 1 1 30%;
+    padding: 7%;
+    margin: 2% 2%;
+ }
 
-.main-item{
-   display: flex;
-   flex-wrap: wrap;
-}
+ /* images for each project */
+ .project1{
+    flex: 2 1 100%;
+    background-image: linear-gradient(45deg, blue, teal 50%);
+ }
 
-.work-item{
-   list-style: none;
-   border: 3px solid #84A98C;
-   background-image: url(https://via.placeholder.com/300.jpg);
-   
-}
+ .project2{
+    background-image: linear-gradient(45deg, darkgreen 45%, blue);
+ }
 
-h2{
-   display: inline-block;
-   color: #2F3E46;
-   border-right: 3px solid #2F3E46;
-   padding-right: 4px;
-}
+ .project3{
+    background-image: linear-gradient(45deg, lightblue 55%,white);
+ }
 
-.header-container{
-   display: flex;
-   justify-content: flex-start;
-   flex-wrap: wrap;
-}
+ .project4{
+    background-image: linear-gradient(45deg, lightpink 55%, white) ;
+ }
+ 
+ .project5{
+    background-image: linear-gradient(45deg, purple 70%, blue) ;
+ }
 
-.contact-item{
-   display: inline-block;
-   list-style: none;
-   text-decoration: underline #84A98C;
-   text-align: center;
-   margin-left: 10px;
-}
+ /* media query to adjust for screen sizes */
 
-
-
-/* placeholder for the media query code to resize stuff */
-@media screen and (max-width: 768px){
-     main, nav, header {
-     flex-direction: column;  
-  }
-}
-  
-  /* Large smartphones - navbar changes color */
-  /* @media screen and (max-width: 768px) {
-   main, nav {
-      background-color: #bb8588;
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    .nav-container{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+    }
+    .card{
+        background-color: var(--text);
+        border: lightblue 5px solid;
     }
   }
   
-  Small smartphones - image placeholders change color */
-  /* @media screen and (max-width: 576px) {
-    main, nav {
-      background-color: #8ac4ff;
-    } */
-   
+  /* Large smartphones - navbar changes color
+  @media screen and (max-width: 768px) {
+    body {
+      background-color:red;
+    }
+  } */
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .section-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 100%;
+    }
+    
+    main section h2{
+      background-color: var(--secondary-bg);
+      opacity: 95%;
+      color: var(--accent);
+      text-align: center;
+    }
+    body{
+      margin-left: 2%;
+    }
+    
+    .nav-container{
+      width: 30%;
+    }
+
+    .work-grid{
+      display: flex;
+      flex-direction: column;
+      /* margin-right: 25%; */
+    }
+    
+    .work-grid>*{
+      flex: 1 1 150px;
+      width: 300%;
+      margin-bottom: 25%;
+    }
+
+  }
