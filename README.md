@@ -28,7 +28,7 @@ Image of Header and Navigation bar in full screen:
 
 Image of Header and Navigation bar in full screen:
 
-![Image of Website](./Images/Portfolio-screenshot2.png)
+![Image of Website](./Images/portfolio-screenshot2.png)
 
 Image of Header and Navigation bar in a smaller viewport (max-width: 576px):
 
