@@ -24,15 +24,15 @@ You may run on Visual Studio Code or any other platform.
 
 Image of Header and Navigation bar in full screen:
 
-![Image of Website](Images\Portfolio-screenshot.png)
+![Image of Website](./Images/Portfolio-screenshot.png)
 
 Image of Header and Navigation bar in full screen:
 
-![Image of Website](Images\portfolio-screenshot2.png)
+![Image of Website](./Images/Portfolio-screenshot2.png)
 
 Image of Header and Navigation bar in a smaller viewport (max-width: 576px):
 
-![Image of Website](Images\Portfolio-screenshot3.png)
+![Image of Website](./Images/Portfolio-screenshot3.png)
 
 ## Link to deployed website
 
