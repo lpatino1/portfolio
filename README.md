@@ -6,7 +6,11 @@ I created a demo portfolio where a user can display their works. It includes an 
 
 In the navigation bar, there are links to sections on the page such as "About Me", "Work", and "Contact Me". There is an additional link to a user's resume.
 
+The "Work" section project links currently go nowhere because there are no personal projects I have completed to include. A user can replace the "#" to their project's URL.
+
 The header also includes a header where a user can put their name.
+
+There are media queries that adjust to the viewport.
 
 ## Installation
 
@@ -18,4 +22,18 @@ You may run on Visual Studio Code or any other platform.
 
 ## Images
 
-![Image of Website]()
+Image of Header and Navigation bar in full screen:
+
+![Image of Website](Images\Portfolio-screenshot.png)
+
+Image of Header and Navigation bar in full screen:
+
+![Image of Website](Images\portfolio-screenshot2.png)
+
+Image of Header and Navigation bar in a smaller viewport (max-width: 576px):
+
+![Image of Website](Images\Portfolio-screenshot3.png)
+
+## Link to deployed website
+
+https://lpatino1.github.io/portfolio/
