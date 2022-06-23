@@ -17,17 +17,14 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-
+/* sets the background */
 header{
     background-color: var(--secondary-bg);
     width: 100%;
     height: 15%;
     padding-bottom: 5%;
-    position: fixed;
-    top:0;
-    opacity: 95%;
 }
-
+/* customizes the header text */
 .header-text{
     color: var(--text);
     background-color: var(--accent);
@@ -39,7 +36,7 @@ header{
 nav a{
     color: var(--accent);
 }
-
+/* flex box container for nav links */
 .nav-container{
     display: flex;
     flex-wrap: wrap;
@@ -48,14 +45,14 @@ nav a{
     justify-content: flex-end;
 
 }
-
+/* each nav link container */
 .card{
     list-style: none;
     font-size:120%;
     padding-left: 2%;
     margin: 1%;
 }
-
+/* hero image */
 .hero{
     height: 400px;
     width: 100%;
@@ -162,14 +159,7 @@ nav a{
         border: lightblue 5px solid;
     }
   }
-  
-  /* Large smartphones - navbar changes color
-  @media screen and (max-width: 768px) {
-    body {
-      background-color:red;
-    }
-  } */
-  
+
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
     .section-container {
@@ -203,5 +193,4 @@ nav a{
       width: 300%;
       margin-bottom: 25%;
     }
-
   }
